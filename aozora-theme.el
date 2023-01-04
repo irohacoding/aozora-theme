@@ -21,7 +21,7 @@
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; URL: https://github.com/irohacoding/aozora-theme
 ;; Created: 2021/11/11 11:45:14
-;; Version: 0.0.1
+;; Version: 0.0.2
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 
