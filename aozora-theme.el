@@ -1,6 +1,6 @@
 ;;; aozora-theme.el --- A light theme for Emacs inspired by blue sky -*- lexical-binding: t -*-
 
-;;; Copyright (c) 2021-2023 IrohaCoding.
+;;; Copyright (C) 2021-2023 IrohaCoding.
 
 ;; This file is not part of GNU Emacs, but is distributed under
 ;; the same terms.
