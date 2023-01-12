@@ -20,8 +20,8 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; URL: https://github.com/irohacoding/aozora-theme
-;; Created: 2021/11/11 11:45:14
-;; Version: 0.0.2
+;; Created: 2021/11/11
+;; Version: 0.0.3
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 
@@ -37,98 +37,77 @@
 (deftheme aozora
   "A light, energetic theme for Emacs as if you were under the blue sky.")
 
-(let* ((fg     "#323231")
-       (bg     "#fffffe")
-       (cursor "#727271")
-
-       (light-gray  "#e8e8e2")
-       (gray        "#cfcfce")
-       (dark-gray   "#a3a3ad")
-       (light-green "#92d310")
-       (green       "#339900")
-       (light-blue  "#a0d8ef")
-       (blue        "#4fb0dd")
-       (dark-blue   "#4894ad")
-       (purple      "#bc64a4")
-       (light-red   "#f09199")
-       (red         "#e60033")
-       (dark-red    "#cc3300")
-       (yellow      "#ffcc00")
-       (orange      "#f6ad49")
-       (brown       "#ee3a3a"))
-
+(let* ((fg     "#2590a7")
+       (bg     "#ffffff")
+       (cursor "#0f3743")
+       (blue-0 "#e8f8f8")
+       (blue-1 "#abdded")
+       (blue-2 "#82d0e3")
+       (blue-3 "#58c3da")
+       (blue-4 "#2eb2d1")
+       (blue-5 "#2590a7")
+       (blue-6 "#1c6a7d")
+       (blue-7 "#124454")
+       (blue-8 "#0f3743")
+       (gray   "#e3e3e3"))
   (custom-theme-set-faces
    'aozora
    `(default ((t (:foreground ,fg :background ,bg :bold nil))))
    `(cursor ((t (:background ,cursor))))
-   `(fixed-pitch ((t (:family "Monospace"))))
-   `(variable-pitch ((((type w32)) (:foundry "outline" :family "Arial")) (t (:family "Sans Serif"))))
-   `(escape-glyph ((t (:foreground ,brown))))
-   `(homoglyph ((t (:foreground ,brown))))
-   `(minibuffer-prompt ((t (:foreground ,dark-blue))))
-   `(highlight ((t (:background ,light-gray))))
-   `(region ((t (:extend t :background ,gray))))
-   `(shadow ((t (:foreground ,dark-gray))))
-   `(secondary-selection ((t (:extend t :background ,yellow))))
-   `(trailing-whitespace ((t (:background ,dark-red))))
-
-   ;;; Font Lock
-   `(font-lock-builtin-face ((t (:foreground ,dark-blue))))
+   `(escape-glyph ((t (:foreground ,blue-7))))
+   `(homoglyph ((t (:foreground ,blue-7))))
+   `(minibuffer-prompt ((t (:foreground ,blue-7))))
+   `(highlight ((t (:background ,gray))))
+   `(region ((t (:extend t :background ,blue-1))))
+   `(shadow ((t (:foreground ,gray))))
+   `(secondary-selection ((t (:extend t :background ,blue-3))))
+   `(trailing-whitespace ((t (:background ,blue-1))))
+   ;; Font Lock
+   `(font-lock-builtin-face ((t (:foreground ,blue-7))))
    `(font-lock-comment-delimiter-face ((default (:inherit (font-lock-comment-face)))))
-   `(font-lock-comment-face
-     ((((class grayscale) (background light)) (:slant italic :weight bold :foreground ,dark-gray))
-      (((class grayscale) (background dark)) (:slant italic :weight bold :foreground ,gray))
-      (((class color) (min-colors 88) (background light)) (:foreground ,dark-red))
-      (((class color) (min-colors 88) (background dark)) (:foreground ,orange))
-      (((class color) (min-colors 16) (background light)) (:foreground ,dark-red))
-      (((class color) (min-colors 16) (background dark)) (:foreground ,red))
-      (((class color) (min-colors 8) (background light)) (:foreground ,red))
-      (((class color) (min-colors 8) (background dark)) (:foreground ,yellow))
-      (t (:slant italic :weight bold))))
-   `(font-lock-constant-face ((t (:foreground ,light-green))))
+   `(font-lock-comment-face ((t (:foreground ,blue-6))))
+   `(font-lock-constant-face ((t (:foreground ,blue-4))))
    `(font-lock-doc-face ((t (:inherit (font-lock-string-face)))))
-   `(font-lock-function-name-face ((t (:foreground ,blue))))
-   `(font-lock-keyword-face ((t (:foreground ,purple))))
+   `(font-lock-function-name-face ((t (:foreground ,blue-5))))
+   `(font-lock-keyword-face ((t (:foreground ,blue-2))))
    `(font-lock-negation-char-face ((t nil)))
    `(font-lock-preprocessor-face ((t (:inherit (font-lock-builtin-face)))))
    `(font-lock-regexp-grouping-backslash ((t (:inherit (bold)))))
    `(font-lock-regexp-grouping-construct ((t (:inherit (bold)))))
-   `(font-lock-string-face ((t (:foreground ,brown))))
-   `(font-lock-type-face ((t (:foreground ,green))))
-   `(font-lock-variable-name-face ((t (:foreground ,light-red))))
+   `(font-lock-string-face ((t (:foreground ,blue-3))))
+   `(font-lock-type-face ((t (:foreground ,blue-5))))
+   `(font-lock-variable-name-face ((t (:foreground ,blue-6))))
    `(font-lock-warning-face ((t (:inherit (error)))))
-
-   ;;; Mode Line
-   `(mode-line ((t (:foreground ,fg :background ,gray :box (:line-width -1 :color ,dark-gray) :weight normal))))   
+   ;; Mode Line
+   `(mode-line ((t (:foreground ,fg :background ,blue-1 :box (:line-width -1 :color ,blue-2) :weight normal))))   
    `(mode-line-buffer-id ((t (:weight bold))))
    `(mode-line-emphasis ((t (:weight bold))))
-   `(mode-line-highlight ((t (:box (:line-width 2 :color ,light-gray)))))
-   `(mode-line-inactive ((t (:inherit mode-line :background ,light-gray :foreground ,dark-gray :weight light))))
-
-   ;;; Parts
+   `(mode-line-highlight ((t (:box (:line-width 2 :color ,blue-2)))))
+   `(mode-line-inactive ((t (:inherit mode-line :background ,gray :foreground ,fg :weight light))))
+   ;; Parts
    `(button ((t (:inherit (link)))))
-   `(link ((t (:foreground ,blue :underline t))))
-   `(link-visited ((t (:inherit link :foreground ,purple))))
+   `(link ((t (:foreground ,blue-2 :underline t))))
+   `(link-visited ((t (:inherit link :foreground ,blue-6))))
    `(fringe ((t (:background ,bg))))
    `(header-line ((t (:inherit mode-line :background ,bg :foreground ,fg :box nil))))
-   `(tooltip ((t (:inherit variable-pitch :background ,yellow :foreground ,fg))))
-
-   ;;; Search
-   `(isearch ((t (:background ,orange :foreground ,fg))))
-   `(isearch-fail ((((class color) (min-colors 88) (background light)) (:background ,light-red))
-                   (((class color) (min-colors 88) (background dark)) (:background ,dark-red))
-                   (((class color) (min-colors 16)) (:background ,red))
-                   (((class color) (min-colors 8)) (:background ,red))
-                   (((class color grayscale)) (:foreground ,gray))
-                   (t (:inverse-video t))))
-   `(lazy-highlight ((((class color) (min-colors 88) (background light)) (:background ,bg))
-                     (((class color) (min-colors 88) (background dark)) (:background ,bg))
-                     (((class color) (min-colors 16)) (:background ,green))
-                     (((class color) (min-colors 8)) (:background ,green))
-                     (t (:underline (:color foreground-color :style line)))))
-   `(match ((t (:background ,yellow))))
+   `(tooltip ((t (:inherit variable-pitch :background ,cursor :foreground ,fg))))
+   ;; Search
+   `(isearch ((t (:background ,blue-8 :foreground ,bg))))
+   `(isearch-fail ((t (:background ,blue-8))))
+   `(lazy-highlight ((t (:background ,bg))))
+   `(match ((t (:background ,blue-8))))
    `(next-error ((t (:inherit (region)))))
-   `(query-replace ((t (:inherit isearch))))))
+   `(query-replace ((t (:inherit isearch))))
+   ;; Web mode
+   `(web-mode-doctype-face ((t :foreground ,blue-7)))
+   `(web-mode-html-tag-face ((t :foreground ,blue-4)))
+   `(web-mode-html-attr-name-face ((t :foreground ,blue-2)))
+   `(web-mode-html-attr-value-face ((t :foreground ,blue-6)))
+   `(web-mode-css-selector-face ((t :foreground ,blue-6)))
+   `(web-mode-css-property-name-face ((t :foreground ,blue-4)))
+   `(web-mode-function-name-face ((t :foreground ,blue-4)))
+   `(web-mode-function-call-face ((t :foreground ,blue-2)))
+   `(web-mode-html-tag-bracket-face ((t :foreground ,blue-4)))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
@@ -136,9 +115,4 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'aozora)
-
-;; Local Variables:
-;; no-byte-compile: t
-;; End:
-
 ;;; aozora-theme.el ends here
