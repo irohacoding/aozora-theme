@@ -1,6 +1,13 @@
 ;;; aozora-theme.el --- A light theme for Emacs inspired by blue sky -*- lexical-binding: t -*-
 
-;;; Copyright (C) 2021-2023 IrohaCoding.
+;;; Copyright (C) 2021-2023 IrohaCoding
+
+;; Author: IrohaCoding <info@irohacoding.com>
+;; Created: 2021-11-11
+;; Version: 0.1.0
+;; Keywords: faces
+;; Package-Requires: ((emacs "27.1"))
+;; Homepage: https://github.com/irohacoding/aozora-theme
 
 ;; This file is not part of GNU Emacs, but is distributed under
 ;; the same terms.
@@ -18,13 +25,6 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with GNU Emacs. If not, see <http://www.gnu.org/licenses/>.
 
-;; Author: IrohaCoding <info@irohacoding.com>
-;; URL: https://github.com/irohacoding/aozora-theme
-;; Created: 2021-11-11
-;; Version: 0.0.4
-;; Keywords: faces
-;; Package-Requires: ((emacs "27.1"))
-
 ;;; Commentary:
 
 ;; Aozora theme is a custom theme for GNU Emacs. Inspired by blue sky.
@@ -36,8 +36,9 @@
   "A light, energetic theme for Emacs as if you were under the blue sky.")
 
 (let* ((fg     "#2590a7")
-       (bg     "#ffffff")
+       (bg     "#fffff7")
        (cursor "#1c6a7d")
+
        (blue-0 "#e8f8f8")
        (blue-1 "#abdded")
        (blue-2 "#82d0e3")
@@ -47,25 +48,33 @@
        (blue-6 "#1c6a7d")
        (blue-7 "#124454")
        (blue-8 "#0f3743")
-       (gray-1 "#e3e3e3"))
+
+       (gray-1 "#e3e3e3")
+       (gray-2 "#c2c2c2")
+       (gray-3 "#ababab")
+       (pink-1 "#ff2a7f"))
 
   (custom-theme-set-faces
    'aozora
    `(default             ((t (:foreground ,fg :background ,bg :bold nil))))
    `(cursor              ((t (:background ,cursor))))
-   `(escape-glyph        ((t (:foreground ,blue-7))))
-   `(homoglyph           ((t (:foreground ,blue-7))))
-   `(minibuffer-prompt   ((t (:foreground ,blue-7))))
+   `(escape-glyph        ((t (:foreground ,blue-3))))
+   `(homoglyph           ((t (:foreground ,blue-3))))
+   `(minibuffer-prompt   ((t (:foreground ,blue-3))))
    `(highlight           ((t (:background ,gray-1))))
    `(region              ((t (:extend t :background ,blue-1))))
-   `(shadow              ((t (:foreground ,gray-1))))
+   `(shadow              ((t (:foreground ,blue-5))))
    `(secondary-selection ((t (:extend t :background ,blue-3))))
    `(trailing-whitespace ((t (:background ,blue-1))))
 
-   `(font-lock-builtin-face              ((t (:foreground ,blue-7))))
+   `(show-paren-match            ((t (:background ,blue-4))))
+   `(show-paren-match-expression ((t (:background ,gray-1))))
+   `(show-paren-mismatch         ((t (:background ,pink-1))))
+
+   `(font-lock-builtin-face              ((t (:foreground ,blue-3))))
    `(font-lock-comment-delimiter-face    ((default (:inherit (font-lock-comment-face)))))
    `(font-lock-comment-face              ((t (:foreground ,blue-6))))
-   `(font-lock-constant-face             ((t (:foreground ,blue-4))))
+   `(font-lock-constant-face             ((t (:foreground ,blue-3))))
    `(font-lock-doc-face                  ((t (:inherit (font-lock-string-face)))))
    `(font-lock-function-name-face        ((t (:foreground ,blue-5))))
    `(font-lock-keyword-face              ((t (:foreground ,blue-3))))
@@ -73,10 +82,10 @@
    `(font-lock-preprocessor-face         ((t (:inherit (font-lock-builtin-face)))))
    `(font-lock-regexp-grouping-backslash ((t (:inherit (bold)))))
    `(font-lock-regexp-grouping-construct ((t (:inherit (bold)))))
-   `(font-lock-string-face               ((t (:foreground ,blue-3))))
+   `(font-lock-string-face               ((t (:foreground ,blue-4))))
    `(font-lock-type-face                 ((t (:foreground ,blue-5))))
    `(font-lock-variable-name-face        ((t (:foreground ,blue-6))))
-   `(font-lock-warning-face              ((t (:inherit (error)))))
+   `(font-lock-warning-face              ((t (:foreground ,pink-1))))
 
    `(mode-line           ((t (:foreground ,fg :background ,blue-1 :box (:line-width -1 :color ,blue-2) :weight normal))))
    `(mode-line-buffer-id ((t (:weight bold))))
@@ -106,7 +115,22 @@
    `(web-mode-css-selector-face      ((t :foreground ,blue-6)))
    `(web-mode-css-property-name-face ((t :foreground ,blue-4)))
    `(web-mode-function-name-face     ((t :foreground ,blue-5)))
-   `(web-mode-function-call-face     ((t :foreground ,blue-3)))))
+   `(web-mode-function-call-face     ((t :foreground ,blue-3)))
+
+   `(org-meta-line      ((t (:foreground ,gray-3))))
+   `(org-document-title ((t (:foreground ,blue-5 :weight bold))))
+   `(org-document-info  ((t (:foreground ,blue-5))))
+   `(org-todo           ((t (:inherit font-lock-warning-face :weight bold))))
+   `(org-done           ((t (:inherit font-lock-type-face :weight bold))))
+   `(org-table          ((t (:inherit font-lock-function-name-face))))
+   `(org-level-1        ((t :foreground ,blue-7)))
+   `(org-level-2        ((t :foreground ,blue-6)))
+   `(org-level-3        ((t :foreground ,blue-5)))
+   `(org-level-4        ((t :foreground ,blue-4)))
+   `(org-level-5        ((t :foreground ,blue-3)))
+   `(org-level-6        ((t :foreground ,blue-2)))
+   `(org-level-7        ((t :foreground ,gray-3)))
+   `(org-level-8        ((t :foreground ,gray-2)))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
