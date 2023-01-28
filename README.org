@@ -1,0 +1,22 @@
+* aozora-theme
+
+A light, energetic theme for GNU Emacs as if you were under the blue sky.
+
+[[screenshot.png]]
+
+** Installation
+
+Clone this repository
+
+#+BEGIN_SRC
+git clone https://github.com/irohacoding/aozora-theme.git
+#+END_SRC
+
+Add configure to load theme in =~/.emacs.d/init.el=
+
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'custom-theme-load-path "path/to/aozora-theme"
+(load-theme 'aozora t)
+#+END_SRC
+    
+An example path to aozora-theme: =~/.emacs.d/themes/=
