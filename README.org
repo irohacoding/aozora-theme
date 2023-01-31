@@ -19,4 +19,4 @@ Add configure to load theme in =~/.emacs.d/init.el=
 (load-theme 'aozora t)
 #+END_SRC
     
-An example path to aozora-theme: =~/.emacs.d/themes/=
+An example path to aozora-theme is =~/.emacs.d/themes/= and store =aozora-theme.el= here

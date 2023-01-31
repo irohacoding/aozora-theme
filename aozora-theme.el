@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-11
-;; Version: 0.1.0
+;; Version: 0.1.1
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/aozora-theme
@@ -87,7 +87,8 @@
    `(font-lock-variable-name-face        ((t (:foreground ,blue-6))))
    `(font-lock-warning-face              ((t (:foreground ,pink-1))))
 
-   `(mode-line           ((t (:foreground ,fg :background ,blue-1 :box (:line-width -1 :color ,blue-2) :weight normal))))
+   `(mode-line           ((t (:foreground ,fg :background ,blue-1
+                                          :box (:line-width -1 :color ,blue-2) :weight normal))))
    `(mode-line-buffer-id ((t (:weight bold))))
    `(mode-line-emphasis  ((t (:weight bold))))
    `(mode-line-highlight ((t (:box (:line-width 2 :color ,blue-2)))))
@@ -101,21 +102,21 @@
    `(tooltip      ((t (:inherit variable-pitch :background ,cursor :foreground ,fg))))
 
    `(isearch        ((t (:background ,blue-7 :foreground ,bg))))
-   `(isearch-fail   ((t (:background ,blue-5))))
+   `(isearch-fail   ((t (:background ,pink-1))))
    `(lazy-highlight ((t (:background ,bg))))
    `(match          ((t (:background ,blue-7))))
    `(next-error     ((t (:inherit (region)))))
    `(query-replace  ((t (:inherit isearch))))
 
-   `(web-mode-doctype-face           ((t :foreground ,blue-7)))
-   `(web-mode-html-tag-face          ((t :foreground ,blue-4)))
-   `(web-mode-html-tag-bracket-face  ((t :foreground ,blue-4)))
-   `(web-mode-html-attr-name-face    ((t :foreground ,blue-2)))
-   `(web-mode-html-attr-value-face   ((t :foreground ,blue-6)))
-   `(web-mode-css-selector-face      ((t :foreground ,blue-6)))
-   `(web-mode-css-property-name-face ((t :foreground ,blue-4)))
-   `(web-mode-function-name-face     ((t :foreground ,blue-5)))
-   `(web-mode-function-call-face     ((t :foreground ,blue-3)))
+   `(web-mode-doctype-face           ((t (:foreground ,blue-7))))
+   `(web-mode-html-tag-face          ((t (:foreground ,blue-4))))
+   `(web-mode-html-tag-bracket-face  ((t (:foreground ,blue-4))))
+   `(web-mode-html-attr-name-face    ((t (:foreground ,blue-2))))
+   `(web-mode-html-attr-value-face   ((t (:foreground ,blue-6))))
+   `(web-mode-css-selector-face      ((t (:foreground ,blue-6))))
+   `(web-mode-css-property-name-face ((t (:foreground ,blue-4))))
+   `(web-mode-function-name-face     ((t (:foreground ,blue-5))))
+   `(web-mode-function-call-face     ((t (:foreground ,blue-3))))
 
    `(org-meta-line      ((t (:foreground ,gray-3))))
    `(org-document-title ((t (:foreground ,blue-5 :weight bold))))
@@ -123,14 +124,14 @@
    `(org-todo           ((t (:inherit font-lock-warning-face :weight bold))))
    `(org-done           ((t (:inherit font-lock-type-face :weight bold))))
    `(org-table          ((t (:inherit font-lock-function-name-face))))
-   `(org-level-1        ((t :foreground ,blue-7)))
-   `(org-level-2        ((t :foreground ,blue-6)))
-   `(org-level-3        ((t :foreground ,blue-5)))
-   `(org-level-4        ((t :foreground ,blue-4)))
-   `(org-level-5        ((t :foreground ,blue-3)))
-   `(org-level-6        ((t :foreground ,blue-2)))
-   `(org-level-7        ((t :foreground ,gray-3)))
-   `(org-level-8        ((t :foreground ,gray-2)))))
+   `(org-level-1        ((t (:foreground ,blue-7))))
+   `(org-level-2        ((t (:foreground ,blue-6))))
+   `(org-level-3        ((t (:foreground ,blue-5))))
+   `(org-level-4        ((t (:foreground ,blue-4))))
+   `(org-level-5        ((t (:foreground ,blue-3))))
+   `(org-level-6        ((t (:foreground ,blue-2))))
+   `(org-level-7        ((t (:foreground ,gray-3))))
+   `(org-level-8        ((t (:foreground ,gray-2))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
