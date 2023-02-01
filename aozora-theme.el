@@ -36,10 +36,9 @@
   "A light, energetic theme for Emacs as if you were under the blue sky.")
 
 (let* ((fg     "#2590a7")
-       (bg     "#fffff7")
+       (bg     "#ffffff")
        (cursor "#1c6a7d")
 
-       (blue-0 "#e8f8f8")
        (blue-1 "#abdded")
        (blue-2 "#82d0e3")
        (blue-3 "#58c3da")
