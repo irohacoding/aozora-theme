@@ -22,8 +22,8 @@ M-x load-theme RET aozora RET
 
 ## Tips
 
-- When you are writing, if the current line highlighting gets in the way, you can disable it by:
+- When you are coding, if want to highlight current line, you can eable it by:
 
 M-x global-hl-line-mode RET
 
-To re-enable it, run the same command above.
+To re-disable it, run the same command above.
