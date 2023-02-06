@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-11
-;; Version: 0.1.1
+;; Version: 0.1.2
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/aozora-theme
@@ -35,28 +35,25 @@
 (deftheme aozora
   "A light, energetic theme for Emacs as if you were under the blue sky.")
 
-(let* ((fg     "#2590a7")
-       (bg     "#ffffff")
-       (cursor "#1c6a7d")
+(let* ((blue-1  "#89d8e6")
+       (blue-2  "#68d0de")
+       (blue-3  "#48c8d6")
+       (blue-4  "#2dbac8")
+       (blue-5  "#259aa7")
+       (blue-6  "#1d7b86")
+       (blue-7  "#155c65")
+       (blue-8  "#0d3c45")
 
-       (blue-1 "#abdded")
-       (blue-2 "#82d0e3")
-       (blue-3 "#58c3da")
-       (blue-4 "#2eb2d1")
-       (blue-5 "#2590a7")
-       (blue-6 "#1c6a7d")
-       (blue-7 "#124454")
-       (blue-8 "#0f3743")
-
-       (gray-1 "#e3e3e3")
-       (gray-2 "#c2c2c2")
-       (gray-3 "#ababab")
-       (pink-1 "#ff2a7f"))
+       (gray-1  "#e3e3e3")
+       (gray-2  "#c2c2c2")
+       (gray-3  "#ababab")
+       (pink-1  "#ff2a7f")
+       (white-1 "#ffffff"))
 
   (custom-theme-set-faces
    'aozora
-   `(default             ((t (:foreground ,fg :background ,bg :bold nil))))
-   `(cursor              ((t (:background ,cursor))))
+   `(default             ((t (:foreground ,blue-5 :background ,white-1 :bold nil))))
+   `(cursor              ((t (:background ,blue-6))))
    `(escape-glyph        ((t (:foreground ,blue-3))))
    `(homoglyph           ((t (:foreground ,blue-3))))
    `(minibuffer-prompt   ((t (:foreground ,blue-3))))
@@ -86,23 +83,23 @@
    `(font-lock-variable-name-face        ((t (:foreground ,blue-6))))
    `(font-lock-warning-face              ((t (:foreground ,pink-1))))
 
-   `(mode-line           ((t (:foreground ,fg :background ,blue-1
+   `(mode-line           ((t (:foreground ,blue-5 :background ,blue-1
                                           :box (:line-width -1 :color ,blue-2) :weight normal))))
    `(mode-line-buffer-id ((t (:weight bold))))
    `(mode-line-emphasis  ((t (:weight bold))))
-   `(mode-line-highlight ((t (:box (:line-width 2 :color ,blue-2)))))
+   `(mode-line-highlight ((t (:box (:line-width 2 :color ,blue-1)))))
    `(mode-line-inactive  ((t (:inherit mode-line :background ,gray-1 :foreground ,blue-3 :weight light))))
 
    `(button       ((t (:inherit (link)))))
    `(link         ((t (:foreground ,blue-3 :underline t))))
    `(link-visited ((t (:inherit link :foreground ,blue-6))))
-   `(fringe       ((t (:background ,bg))))
-   `(header-line  ((t (:inherit mode-line :background ,bg :foreground ,fg :box nil))))
-   `(tooltip      ((t (:inherit variable-pitch :background ,cursor :foreground ,fg))))
+   `(fringe       ((t (:background ,white-1))))
+   `(header-line  ((t (:inherit mode-line :background ,white-1 :foreground ,blue-5 :box nil))))
+   `(tooltip      ((t (:inherit variable-pitch :background ,blue-6 :foreground ,blue-5))))
 
-   `(isearch        ((t (:background ,blue-7 :foreground ,bg))))
+   `(isearch        ((t (:background ,blue-7 :foreground ,white-1))))
    `(isearch-fail   ((t (:background ,pink-1))))
-   `(lazy-highlight ((t (:background ,bg))))
+   `(lazy-highlight ((t (:background ,white-1))))
    `(match          ((t (:background ,blue-7))))
    `(next-error     ((t (:inherit (region)))))
    `(query-replace  ((t (:inherit isearch))))
