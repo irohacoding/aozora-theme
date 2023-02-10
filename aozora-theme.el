@@ -57,7 +57,7 @@
    `(homoglyph ((t (:foreground ,aozora-blue-3))))
    `(minibuffer-prompt ((t (:foreground ,aozora-blue-3))))
    `(highlight ((t (:background ,aozora-gray-1))))
-   `(region ((t (:extend t :background ,aozora-blue-1))))
+   `(region ((t (:extend t :background ,aozora-gray-2))))
    `(shadow ((t (:foreground ,aozora-blue-5))))
    `(secondary-selection ((t (:extend t :background ,aozora-blue-3))))
    `(trailing-whitespace ((t (:background ,aozora-blue-1))))
