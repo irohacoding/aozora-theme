@@ -88,13 +88,14 @@
    '(mode-line-emphasis  ((t (:weight bold))))
    `(mode-line-highlight ((t (:box (:line-width 2 :color ,aozora-blue-1)))))
    `(mode-line-inactive  ((t (:inherit mode-line :background ,aozora-gray-1 :foreground ,aozora-blue-3 :weight light))))
+   `(vertical-border     ((t (:foreground ,aozora-gray-3))))
 
-   '(button       ((t (:inherit (link)))))
-   `(link         ((t (:foreground ,aozora-blue-3 :underline t))))
-   `(link-visited ((t (:inherit link :foreground ,aozora-blue-6))))
-   `(fringe       ((t (:background ,aozora-white))))
-   `(header-line  ((t (:inherit mode-line :background ,aozora-white :foreground ,aozora-blue-5 :box nil))))
-   `(tooltip      ((t (:inherit variable-pitch :background ,aozora-blue-6 :foreground ,aozora-blue-5))))
+   '(button          ((t (:inherit (link)))))
+   `(link            ((t (:foreground ,aozora-blue-3 :underline t))))
+   `(link-visited    ((t (:inherit link :foreground ,aozora-blue-6))))
+   `(fringe          ((t (:background ,aozora-white))))
+   `(header-line     ((t (:inherit mode-line :background ,aozora-white :foreground ,aozora-blue-5 :box nil))))
+   `(tooltip         ((t (:inherit variable-pitch :background ,aozora-blue-6 :foreground ,aozora-blue-5))))
 
    `(isearch         ((t (:background ,aozora-blue-7 :foreground ,aozora-white))))
    `(isearch-fail    ((t (:background ,aozora-pink-1))))
@@ -102,7 +103,6 @@
    `(match           ((t (:background ,aozora-blue-7))))
    '(next-error      ((t (:inherit (region)))))
    '(query-replace   ((t (:inherit isearch))))
-   `(vertical-border ((t (:foreground ,aozora-gray-3))))
 
    `(web-mode-doctype-face           ((t (:foreground ,aozora-blue-7))))
    `(web-mode-html-tag-face          ((t (:foreground ,aozora-blue-4))))
