@@ -60,7 +60,7 @@
    `(region              ((t (:extend t :background ,aozora-gray-2))))
    `(shadow              ((t (:foreground ,aozora-blue-5))))
    `(secondary-selection ((t (:extend t :background ,aozora-blue-3))))
-   `(trailing-whitespace ((t (:background ,aozora-blue-1))))
+   `(whitespace-space    ((t (:foreground ,aozora-gray-2))))
 
    `(show-paren-match            ((t (:background ,aozora-blue-4))))
    `(show-paren-match-expression ((t (:background ,aozora-gray-1))))
@@ -80,7 +80,7 @@
    `(font-lock-string-face               ((t (:foreground ,aozora-blue-4))))
    `(font-lock-type-face                 ((t (:foreground ,aozora-blue-5))))
    `(font-lock-variable-name-face        ((t (:foreground ,aozora-blue-6))))
-   `(font-lock-warning-face              ((t (:foreground ,aozora-pink-1))))
+   `(font-lock-warning-face              ((t (:foreground ,aozora-pink-1 :weight bold))))
 
    `(mode-line ((t (:foreground ,aozora-blue-5 :background ,aozora-blue-1
                                 :box (:line-width -1 :color ,aozora-blue-2) :weight normal))))
@@ -90,19 +90,19 @@
    `(mode-line-inactive  ((t (:inherit mode-line :background ,aozora-gray-1 :foreground ,aozora-blue-3 :weight light))))
    `(vertical-border     ((t (:foreground ,aozora-gray-3))))
 
-   '(button          ((t (:inherit (link)))))
-   `(link            ((t (:foreground ,aozora-blue-3 :underline t))))
-   `(link-visited    ((t (:inherit link :foreground ,aozora-blue-6))))
-   `(fringe          ((t (:background ,aozora-white))))
-   `(header-line     ((t (:inherit mode-line :background ,aozora-white :foreground ,aozora-blue-5 :box nil))))
-   `(tooltip         ((t (:inherit variable-pitch :background ,aozora-blue-6 :foreground ,aozora-blue-5))))
+   '(button       ((t (:inherit (link)))))
+   `(link         ((t (:foreground ,aozora-blue-3 :underline t))))
+   `(link-visited ((t (:inherit link :foreground ,aozora-blue-6))))
+   `(fringe       ((t (:background ,aozora-white))))
+   `(header-line  ((t (:inherit mode-line :background ,aozora-white :foreground ,aozora-blue-5 :box nil))))
+   `(tooltip      ((t (:inherit variable-pitch :background ,aozora-blue-6 :foreground ,aozora-blue-5))))
 
-   `(isearch         ((t (:background ,aozora-blue-7 :foreground ,aozora-white))))
-   `(isearch-fail    ((t (:background ,aozora-pink-1))))
-   `(lazy-highlight  ((t (:background ,aozora-white))))
-   `(match           ((t (:background ,aozora-blue-7))))
-   '(next-error      ((t (:inherit (region)))))
-   '(query-replace   ((t (:inherit isearch))))
+   `(isearch        ((t (:background ,aozora-blue-7 :foreground ,aozora-white))))
+   `(isearch-fail   ((t (:background ,aozora-pink-1 :foreground ,aozora-white))))
+   `(lazy-highlight ((t (:background ,aozora-white))))
+   `(match          ((t (:background ,aozora-blue-6 :foreground ,aozora-white))))
+   '(next-error     ((t (:inherit (region)))))
+   '(query-replace  ((t (:inherit isearch))))
 
    `(web-mode-doctype-face           ((t (:foreground ,aozora-blue-7))))
    `(web-mode-html-tag-face          ((t (:foreground ,aozora-blue-4))))
@@ -127,7 +127,10 @@
    `(org-level-5        ((t (:foreground ,aozora-blue-3))))
    `(org-level-6        ((t (:foreground ,aozora-blue-2))))
    `(org-level-7        ((t (:foreground ,aozora-gray-3))))
-   `(org-level-8        ((t (:foreground ,aozora-gray-2))))))
+   `(org-level-8        ((t (:foreground ,aozora-gray-2))))
+
+   `(counsel-key-binding     ((t (:foreground ,aozora-pink-1 :weight bold))))
+   `(counsel-outline-default ((t (:foreground ,aozora-blue-5))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
