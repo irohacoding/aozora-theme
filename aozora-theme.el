@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-11
-;; Version: 0.2
+;; Version: 0.3
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/aozora-theme
@@ -44,6 +44,7 @@
        (aozora-blue-7 "#114755")
        (aozora-blue-8 "#07242c")
        (aozora-white  "#ffffff")
+       (aozora-gray-0 "#faf9f8")
        (aozora-gray-1 "#e3e3e3")
        (aozora-gray-2 "#c2c2c2")
        (aozora-gray-3 "#ababab")
@@ -61,6 +62,7 @@
    `(shadow              ((t (:foreground ,aozora-blue-5))))
    `(secondary-selection ((t (:extend t :background ,aozora-blue-3))))
    `(whitespace-space    ((t (:foreground ,aozora-gray-2))))
+   `(linum               ((t (:foreground ,aozora-gray-3 :background ,aozora-gray-0))))
 
    `(show-paren-match            ((t (:background ,aozora-blue-4))))
    `(show-paren-match-expression ((t (:background ,aozora-gray-1))))
