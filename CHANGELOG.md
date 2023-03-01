@@ -1,28 +1,28 @@
 # Change Log
 
-## v0.4 (Unrelease)
+## v0.4 (Unreleased)
 
-### Add
+### Added
 - linum-mode face
 - aozora-gray-0 color
 
 ## v0.3 (2023-02-24)
 
-### Add
+### Added
 - vertical-border face
 - whitespace-space face
-- face of counsel
+- counsel face partially
 
-### Change
+### Changed
 - region background from blue to gray
 - weight bold to font-lock-warning-face
 
-### Remove
+### Removed
 - trailing-whitespace face
 
 ## v0.2 (2023-02-07)
 
-### Add
+### Added
 - web-mode face
 - org-mode face
 
