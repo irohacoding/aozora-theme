@@ -3,8 +3,14 @@
 ## v0.4 (Unreleased)
 
 ### Added
-- linum-mode face
+- linum mode face
+- dired mode face
+- hl-line mode face
 - aozora-gray-0 color
+- aozora-yellow color
+
+### Changed
+- color name of aozora-pink-1 to aozora-pink
 
 ## v0.3 (2023-02-24)
 
