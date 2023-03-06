@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-11
-;; Version: 0.3.1
+;; Version: 0.3.2
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/aozora-theme
@@ -49,7 +49,8 @@
        (aozora-gray-3 "#ababab")
        (aozora-white  "#ffffff")
        (aozora-yellow "#fffabc")
-       (aozora-pink   "#ff2a7f"))
+       (aozora-pink-1 "#ffc0cb")
+       (aozora-pink-2 "#ff69b4"))
 
   (custom-theme-set-faces
    'aozora
@@ -68,7 +69,7 @@
 
    `(show-paren-match            ((t (:background ,aozora-blue-4))))
    `(show-paren-match-expression ((t (:background ,aozora-gray-1))))
-   `(show-paren-mismatch         ((t (:background ,aozora-pink))))
+   `(show-paren-mismatch         ((t (:background ,aozora-pink-2))))
 
    `(font-lock-builtin-face              ((t (:foreground ,aozora-blue-3))))
    '(font-lock-comment-delimiter-face    ((default (:inherit (font-lock-comment-face)))))
@@ -84,7 +85,7 @@
    `(font-lock-string-face               ((t (:foreground ,aozora-blue-4))))
    `(font-lock-type-face                 ((t (:foreground ,aozora-blue-5))))
    `(font-lock-variable-name-face        ((t (:foreground ,aozora-blue-6))))
-   `(font-lock-warning-face              ((t (:foreground ,aozora-pink :weight bold))))
+   `(font-lock-warning-face              ((t (:foreground ,aozora-pink-2 :weight bold))))
 
    `(mode-line ((t (:foreground ,aozora-blue-5 :background ,aozora-blue-1
                                 :box (:line-width -1 :color ,aozora-blue-2) :weight normal))))
@@ -102,14 +103,14 @@
    `(tooltip      ((t (:inherit variable-pitch :background ,aozora-blue-6 :foreground ,aozora-blue-5))))
 
    `(isearch        ((t (:background ,aozora-blue-7 :foreground ,aozora-white))))
-   `(isearch-fail   ((t (:background ,aozora-pink :foreground ,aozora-white))))
+   `(isearch-fail   ((t (:background ,aozora-pink-2 :foreground ,aozora-white))))
    `(lazy-highlight ((t (:background ,aozora-white))))
    `(match          ((t (:background ,aozora-blue-6 :foreground ,aozora-white))))
    '(next-error     ((t (:inherit (region)))))
    '(query-replace  ((t (:inherit isearch))))
 
    `(dired-directory ((t (:foreground ,aozora-blue-5 :background ,aozora-blue-1))))
-   `(dired-flagged   ((t (:foreground ,aozora-pink :background ,aozora-yellow))))
+   `(dired-flagged   ((t (:foreground ,aozora-pink-2 :background ,aozora-yellow))))
    `(dired-header    ((t (:foreground ,aozora-blue-5 :background ,aozora-blue-1))))
    `(dired-mark      ((t (:foreground ,aozora-blue-7 :weight bold))))
 
@@ -138,7 +139,13 @@
    `(org-level-7        ((t (:foreground ,aozora-gray-3))))
    `(org-level-8        ((t (:foreground ,aozora-gray-2))))
 
-   `(counsel-key-binding     ((t (:foreground ,aozora-pink :weight bold))))
+   `(ivy-current-match           ((t (:foreground ,aozora-blue-6 :background ,aozora-yellow))))
+   `(ivy-minibuffer-match-face-1 ((t (:foreground ,aozora-blue-6 :background ,aozora-gray-0))))
+   `(ivy-minibuffer-match-face-2 ((t (:foreground ,aozora-blue-6 :background ,aozora-pink-1))))
+   `(ivy-minibuffer-match-face-3 ((t (:foreground ,aozora-blue-6 :background ,aozora-blue-2))))
+   `(ivy-minibuffer-match-face-4 ((t (:foreground ,aozora-blue-6 :background ,aozora-blue-4))))
+
+   `(counsel-key-binding     ((t (:foreground ,aozora-pink-2 :weight bold))))
    `(counsel-outline-default ((t (:foreground ,aozora-blue-5))))))
 
 ;;;###autoload
