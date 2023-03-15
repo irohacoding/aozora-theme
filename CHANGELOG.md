@@ -1,6 +1,11 @@
 # Change Log
 
-## v0.4 (Unreleased)
+## v0.5 (Unreleased)
+
+### Added
+nothing added yet
+
+## v0.4 (2023-03-15)
 
 ### Added
 - linum mode face
@@ -8,12 +13,14 @@
 - ivy mode face
 - hl-line mode face
 - aozora-gray-0 color
+- aozora-gray-4 color
 - aozora-yellow color
-- aozora-pink-1
+- aozora-pink-1 color
 
 ### Changed
 - color name of aozora-pink-1 to aozora-pink
 - aozora-pink to aozora-pink-2 after above changes
+- color of font-lock-comment-face foreground to aozora-gray-4
 
 ## v0.3 (2023-02-24)
 
