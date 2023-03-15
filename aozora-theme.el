@@ -47,6 +47,7 @@
        (aozora-gray-1 "#e3e3e3")
        (aozora-gray-2 "#c2c2c2")
        (aozora-gray-3 "#ababab")
+       (aozora-gray-4 "#868686")
        (aozora-white  "#ffffff")
        (aozora-yellow "#fffabc")
        (aozora-pink-1 "#ffc0cb")
@@ -73,7 +74,7 @@
 
    `(font-lock-builtin-face              ((t (:foreground ,aozora-blue-3))))
    '(font-lock-comment-delimiter-face    ((default (:inherit (font-lock-comment-face)))))
-   `(font-lock-comment-face              ((t (:foreground ,aozora-blue-6))))
+   `(font-lock-comment-face              ((t (:foreground ,aozora-gray-4))))
    `(font-lock-constant-face             ((t (:foreground ,aozora-blue-3))))
    '(font-lock-doc-face                  ((t (:inherit (font-lock-string-face)))))
    `(font-lock-function-name-face        ((t (:foreground ,aozora-blue-5))))
