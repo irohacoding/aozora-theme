@@ -1,9 +1,12 @@
 # Change Log
 
-## v0.5 (Unreleased)
+## main (Unreleased)
 
-### Added
-nothing added yet
+### Changed
+- color of dired-directory face
+- color of dired-header face
+- color of ivy-current-match face
+- color of ivy-minibuffer-match-face-1 to 3
 
 ## v0.4 (2023-03-15)
 
