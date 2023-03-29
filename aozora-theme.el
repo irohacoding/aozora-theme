@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-11
-;; Version: 0.4
+;; Version: 0.4.1
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/aozora-theme
@@ -110,9 +110,9 @@
    '(next-error     ((t (:inherit (region)))))
    '(query-replace  ((t (:inherit isearch))))
 
-   `(dired-directory ((t (:foreground ,aozora-blue-5 :background ,aozora-blue-1))))
+   `(dired-directory ((t (:foreground ,aozora-blue-5 :background ,aozora-gray-1))))
    `(dired-flagged   ((t (:foreground ,aozora-pink-2 :background ,aozora-yellow))))
-   `(dired-header    ((t (:foreground ,aozora-blue-5 :background ,aozora-blue-1))))
+   `(dired-header    ((t (:foreground ,aozora-blue-5 :background ,aozora-gray-1))))
    `(dired-mark      ((t (:foreground ,aozora-blue-7 :weight bold))))
 
    `(web-mode-doctype-face           ((t (:foreground ,aozora-blue-7))))
@@ -140,10 +140,10 @@
    `(org-level-7        ((t (:foreground ,aozora-gray-3))))
    `(org-level-8        ((t (:foreground ,aozora-gray-2))))
 
-   `(ivy-current-match           ((t (:foreground ,aozora-blue-6 :background ,aozora-yellow))))
-   `(ivy-minibuffer-match-face-1 ((t (:foreground ,aozora-blue-6 :background ,aozora-gray-0))))
-   `(ivy-minibuffer-match-face-2 ((t (:foreground ,aozora-blue-6 :background ,aozora-pink-1))))
-   `(ivy-minibuffer-match-face-3 ((t (:foreground ,aozora-blue-6 :background ,aozora-blue-2))))
+   `(ivy-current-match           ((t (:foreground ,aozora-white :background ,aozora-blue-5))))
+   `(ivy-minibuffer-match-face-1 ((t (:foreground ,aozora-blue-6 :background ,aozora-blue-1))))
+   `(ivy-minibuffer-match-face-2 ((t (:foreground ,aozora-blue-6 :background ,aozora-blue-2))))
+   `(ivy-minibuffer-match-face-3 ((t (:foreground ,aozora-blue-6 :background ,aozora-blue-3))))
    `(ivy-minibuffer-match-face-4 ((t (:foreground ,aozora-blue-6 :background ,aozora-blue-4))))
 
    `(counsel-key-binding     ((t (:foreground ,aozora-pink-2 :weight bold))))
