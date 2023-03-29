@@ -1,15 +1,9 @@
-# Changelog
+# Change Log
 
-## main (Unreleased)
+## v0.5 (Unreleased)
 
 ### Added
 nothing added yet
-
-### Changed
-- dired-directory face
-- dired-header face
-- ivy-current-match
-- ivy-minibuffer-match-face-2
 
 ## v0.4 (2023-03-15)
 
