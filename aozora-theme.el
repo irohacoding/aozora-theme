@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-11
-;; Version: 0.4.1
+;; Version: 0.4.2
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/aozora-theme
@@ -111,7 +111,7 @@
    '(query-replace  ((t (:inherit isearch))))
 
    `(dired-directory ((t (:foreground ,aozora-blue-5 :background ,aozora-gray-1))))
-   `(dired-flagged   ((t (:foreground ,aozora-pink-2 :background ,aozora-yellow))))
+   `(dired-flagged   ((t (:foreground ,aozora-white :background ,aozora-blue-5))))
    `(dired-header    ((t (:foreground ,aozora-blue-5 :background ,aozora-gray-1))))
    `(dired-mark      ((t (:foreground ,aozora-blue-7 :weight bold))))
 
