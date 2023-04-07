@@ -3,10 +3,11 @@
 ## main (Unreleased)
 
 ### Changed
-- color of dired-directory face
-- color of dired-header face
-- color of ivy-current-match face
-- color of ivy-minibuffer-match-face-1 to 3
+- dired-directory face
+- dired-header face
+- ivy-current-match face
+- ivy-minibuffer-match-face-1 to 3
+- dired-flagged face
 
 ## v0.4 (2023-03-15)
 
