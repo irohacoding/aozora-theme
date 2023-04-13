@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-11
-;; Version: 0.4.2
+;; Version: 0.4.3
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/aozora-theme
@@ -48,7 +48,7 @@
        (aozora-gray-2 "#c2c2c2")
        (aozora-gray-3 "#ababab")
        (aozora-gray-4 "#868686")
-       (aozora-white  "#ffffff")
+       (aozora-white  "#f8fbf8")
        (aozora-yellow "#fffabc")
        (aozora-pink-1 "#ffc0cb")
        (aozora-pink-2 "#ff69b4"))
@@ -131,6 +131,8 @@
    '(org-todo           ((t (:inherit font-lock-warning-face :weight bold))))
    '(org-done           ((t (:inherit font-lock-type-face :weight bold))))
    '(org-table          ((t (:inherit font-lock-function-name-face))))
+   `(org-priority       ((t (:foreground ,aozora-blue-3 :weight bold))))
+   `(org-date           ((t (:foreground ,aozora-blue-5 :weight bold))))
    `(org-level-1        ((t (:foreground ,aozora-blue-7))))
    `(org-level-2        ((t (:foreground ,aozora-blue-6))))
    `(org-level-3        ((t (:foreground ,aozora-blue-5))))
