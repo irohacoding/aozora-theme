@@ -2,12 +2,17 @@
 
 ## main (Unreleased)
 
+### Added
+- org-priority face
+- org-date face
+
 ### Changed
 - dired-directory face
 - dired-header face
 - ivy-current-match face
 - ivy-minibuffer-match-face-1 to 3
 - dired-flagged face
+- aozora-white color
 
 ## v0.4 (2023-03-15)
 
