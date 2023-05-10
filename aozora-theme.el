@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-11
-;; Version: 0.4.3
+;; Version: 0.4.4
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/aozora-theme
@@ -35,23 +35,23 @@
 (deftheme aozora
   "A light, energetic theme for Emacs as if you were under the blue sky.")
 
-(let* ((aozora-blue-1 "#aae1ee")
-       (aozora-blue-2 "#81d2e4")
-       (aozora-blue-3 "#58c3da")
-       (aozora-blue-4 "#2fb3d0")
-       (aozora-blue-5 "#258fa7")
-       (aozora-blue-6 "#1b6b7e")
-       (aozora-blue-7 "#114755")
-       (aozora-blue-8 "#07242c")
-       (aozora-gray-0 "#faf9f8")
-       (aozora-gray-1 "#e3e3e3")
-       (aozora-gray-2 "#c2c2c2")
-       (aozora-gray-3 "#ababab")
-       (aozora-gray-4 "#868686")
-       (aozora-white  "#f8fbf8")
-       (aozora-yellow "#fffabc")
-       (aozora-pink-1 "#ffc0cb")
-       (aozora-pink-2 "#ff69b4"))
+(let ((aozora-blue-1 "#aae1ee")
+      (aozora-blue-2 "#81d2e4")
+      (aozora-blue-3 "#58c3da")
+      (aozora-blue-4 "#2fb3d0")
+      (aozora-blue-5 "#258fa7")
+      (aozora-blue-6 "#1b6b7e")
+      (aozora-blue-7 "#114755")
+      (aozora-blue-8 "#07242c")
+      (aozora-gray-0 "#faf9f8")
+      (aozora-gray-1 "#e3e3e3")
+      (aozora-gray-2 "#c2c2c2")
+      (aozora-gray-3 "#ababab")
+      (aozora-gray-4 "#868686")
+      (aozora-white  "#f8fbf8")
+      (aozora-yellow "#fffabc")
+      (aozora-pink-1 "#ffc0cb")
+      (aozora-pink-2 "#ff69b4"))
 
   (custom-theme-set-faces
    'aozora
