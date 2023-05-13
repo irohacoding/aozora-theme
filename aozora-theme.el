@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-11
-;; Version: 0.4.4
+;; Version: 0.5.0
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/aozora-theme
