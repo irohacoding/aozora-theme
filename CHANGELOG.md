@@ -1,6 +1,12 @@
-# Change Log
+# Changelog
 
 ## main (Unreleased)
+
+### Added
+
+- Nothing yet.
+
+## v0.5 (2023-05-13)
 
 ### Added
 - org-priority face
@@ -13,6 +19,9 @@
 - ivy-minibuffer-match-face-1 to 3
 - dired-flagged face
 - aozora-white color
+
+### Fixed
+- local variable declaration (let* -> let)
 
 ## v0.4 (2023-03-15)
 
