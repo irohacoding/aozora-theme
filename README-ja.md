@@ -1,6 +1,6 @@
-# Aozora Theme
+# Aozoraテーマ
 
-Aozora Themeは、青空の下にいるかのような軽やかでエネルギッシュなGNU Emacsのテーマです。
+Aozoraテーマは、青空の下にいるかのような軽やかでエネルギッシュなGNU Emacsのテーマです。
 
 ![スクリーンショット](screenshot.png)
 
@@ -14,7 +14,7 @@ Aozora Themeは、青空の下にいるかのような軽やかでエネルギ�
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 ```
 
-3\. テーマをロードしてください。
+3\. 以下のコマンドを実行して、テーマをロードしてください。
 
 `M-x` `load-theme` `RET` `aozora` `RET`
 
@@ -23,5 +23,4 @@ Aozora Themeは、青空の下にいるかのような軽やかでエネルギ�
 ```elisp
 (load-theme 'aozora t)
 ```
-
-5\. （任意）このテーマをお楽しみください！ :D
+5\. エンジョイ！
