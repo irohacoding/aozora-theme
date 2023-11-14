@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-11
-;; Version: 0.5.0
+;; Version: 0.5.1
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/aozora-theme
@@ -48,6 +48,7 @@
       (aozora-gray-2 "#c2c2c2")
       (aozora-gray-3 "#ababab")
       (aozora-gray-4 "#868686")
+      (aozora-gray-5 "#545454")
       (aozora-white  "#f8fbf8")
       (aozora-yellow "#fffabc")
       (aozora-pink-1 "#ffc0cb")
@@ -125,22 +126,23 @@
    `(web-mode-function-name-face     ((t (:foreground ,aozora-blue-5))))
    `(web-mode-function-call-face     ((t (:foreground ,aozora-blue-3))))
 
-   `(org-meta-line      ((t (:foreground ,aozora-gray-3))))
-   `(org-document-title ((t (:foreground ,aozora-blue-5 :weight bold))))
-   `(org-document-info  ((t (:foreground ,aozora-blue-5))))
-   '(org-todo           ((t (:inherit font-lock-warning-face :weight bold))))
-   '(org-done           ((t (:inherit font-lock-type-face :weight bold))))
-   '(org-table          ((t (:inherit font-lock-function-name-face))))
-   `(org-priority       ((t (:foreground ,aozora-blue-3 :weight bold))))
-   `(org-date           ((t (:foreground ,aozora-blue-5 :weight bold))))
-   `(org-level-1        ((t (:foreground ,aozora-blue-7))))
-   `(org-level-2        ((t (:foreground ,aozora-blue-6))))
-   `(org-level-3        ((t (:foreground ,aozora-blue-5))))
-   `(org-level-4        ((t (:foreground ,aozora-blue-4))))
-   `(org-level-5        ((t (:foreground ,aozora-blue-3))))
-   `(org-level-6        ((t (:foreground ,aozora-blue-2))))
-   `(org-level-7        ((t (:foreground ,aozora-gray-3))))
-   `(org-level-8        ((t (:foreground ,aozora-gray-2))))
+   `(org-meta-line            ((t (:foreground ,aozora-gray-3))))
+   `(org-document-title       ((t (:foreground ,aozora-blue-5 :weight bold))))
+   `(org-document-info        ((t (:foreground ,aozora-blue-5))))
+   '(org-todo                 ((t (:inherit font-lock-warning-face :weight bold))))
+   '(org-done                 ((t (:inherit font-lock-type-face :weight bold))))
+   '(org-table                ((t (:inherit font-lock-function-name-face))))
+   `(org-priority             ((t (:foreground ,aozora-blue-3 :weight bold))))
+   `(org-date                 ((t (:foreground ,aozora-blue-5 :weight bold))))
+   `(org-level-1              ((t (:foreground ,aozora-blue-7))))
+   `(org-level-2              ((t (:foreground ,aozora-blue-6))))
+   `(org-level-3              ((t (:foreground ,aozora-blue-5))))
+   `(org-level-4              ((t (:foreground ,aozora-blue-4))))
+   `(org-level-5              ((t (:foreground ,aozora-blue-3))))
+   `(org-level-6              ((t (:foreground ,aozora-blue-2))))
+   `(org-level-7              ((t (:foreground ,aozora-gray-3))))
+   `(org-level-8              ((t (:foreground ,aozora-gray-2))))
+   `(org-dispatcher-highlight ((t (:foreground ,aozora-pink-2 :weight bold))))
 
    `(ivy-current-match           ((t (:foreground ,aozora-white :background ,aozora-blue-5))))
    `(ivy-minibuffer-match-face-1 ((t (:foreground ,aozora-blue-6 :background ,aozora-blue-1))))
@@ -149,7 +151,20 @@
    `(ivy-minibuffer-match-face-4 ((t (:foreground ,aozora-blue-6 :background ,aozora-blue-4))))
 
    `(counsel-key-binding     ((t (:foreground ,aozora-pink-2 :weight bold))))
-   `(counsel-outline-default ((t (:foreground ,aozora-blue-5))))))
+   `(counsel-outline-default ((t (:foreground ,aozora-blue-5))))
+
+   `(completions-common-part ((t (:foreground ,aozora-blue-4))))
+
+   `(mozc-cand-echo-area-annotation-face ((t (:foreground ,aozora-blue-6))))
+   `(mozc-cand-echo-area-candidate-face  ((t (:foreground ,aozora-blue-4))))
+   `(mozc-cand-echo-area-focused-face    ((t (:foreground ,aozora-blue-6 :background ,aozora-yellow))))
+   `(mozc-cand-echo-area-shortcut-face   ((t (:foreground ,aozora-blue-6))))
+   `(mozc-cand-echo-area-stats-face      ((t (:foreground ,aozora-blue-6 :background ,aozora-pink-1))))
+   `(mozc-cand-overlay-description-face  ((t (:foreground ,aozora-gray-3 :background ,aozora-gray-1))))
+   `(mozc-cand-overlay-even-face         ((t (:foreground ,aozora-gray-5 :background ,aozora-gray-1))))
+   `(mozc-cand-overlay-focused-face      ((t (:foreground ,aozora-gray-5 :background ,aozora-gray-2))))
+   `(mozc-cand-overlay-footer-face       ((t (:foreground ,aozora-gray-5 :background ,aozora-gray-3))))
+   `(mozc-cand-overlay-odd-face          ((t (:foreground ,aozora-gray-5 :background ,aozora-gray-1))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
