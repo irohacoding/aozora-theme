@@ -4,7 +4,10 @@
 
 ### Added
 
-- Nothing yet.
+- aozora-gray-5 color (#545454)
+- org-dispatcher-highlight face
+- completions-common-part face
+- mozc faces
 
 ## v0.5 (2023-05-13)
 
