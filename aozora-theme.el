@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-11
-;; Version: 0.5.1
+;; Version: 0.5.2
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/aozora-theme
@@ -154,6 +154,9 @@
    `(counsel-outline-default ((t (:foreground ,aozora-blue-5))))
 
    `(completions-common-part ((t (:foreground ,aozora-blue-4))))
+
+   '(corfu-annotations ((t (:underline nil))))
+   `(corfu-current     ((t (:background ,aozora-gray-1))))
 
    `(mozc-cand-echo-area-annotation-face ((t (:foreground ,aozora-blue-6))))
    `(mozc-cand-echo-area-candidate-face  ((t (:foreground ,aozora-blue-4))))
