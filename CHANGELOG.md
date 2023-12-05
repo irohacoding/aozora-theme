@@ -8,6 +8,9 @@
 - org-dispatcher-highlight face
 - completions-common-part face
 - mozc faces
+- corfu faces
+  - corfu-annotations (removed underline)
+  - corfu-current (changed background color)
 
 ## v0.5 (2023-05-13)
 
