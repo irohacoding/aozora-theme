@@ -1,9 +1,8 @@
-# Changelog
+# Change log
 
 ## main (Unreleased)
 
 ### Added
-
 - aozora-gray-5 color (#545454)
 - org-dispatcher-highlight face
 - completions-common-part face
@@ -11,6 +10,9 @@
 - corfu faces
   - corfu-annotations (removed underline)
   - corfu-current (changed background color)
+
+### Changed
+- program name of terms
 
 ## v0.5 (2023-05-13)
 
